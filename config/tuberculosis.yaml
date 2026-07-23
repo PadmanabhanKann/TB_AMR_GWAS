@@ -1,0 +1,57 @@
+organism: "Mycobacterium tuberculosis Lineage 4"
+n_genomes: 3080
+source: CRyPTIC
+
+paths:
+  raw_data: data/raw/tuberculosis
+  results: results/tuberculosis
+
+phylogeny:
+  tool: iqtree
+  earlier_attempt: fasttree   # superseded, kept in jobs/tuberculosis/fasttree.sh for provenance
+
+gwas:
+  tool: pyseer
+  modes: [standard, conditional]
+
+ld:
+  tool: plink
+
+antibiotics:
+  - amikacin
+  - bedaquiline
+  - clofazimine
+  - delamanid
+  - ethambutol
+  - ethionamide
+  - isoniazid
+  - kanamycin
+  - levofloxacin
+  - linezolid
+  - moxifloxacin
+  - rifabutin
+  - rifampicin
+
+loci_of_interest:
+  - rpoB
+  - gyrA
+  - embB
+  - esxQ   # novel candidate locus, C313G/L105V variant
+  - metK
+  - icd1
+  - tcrA
+  - katG
+  - fabG1
+  - gid
+  - rlmB
+  - dosT
+  - PPE36
+  - PE_PGRS_family
+
+alt_methods:
+  - gemma
+  - treewas
+  - genepi
+  - hierbaps
+  - superdca
+  - clonalframeml

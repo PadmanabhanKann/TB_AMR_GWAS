@@ -1,0 +1,14 @@
+# OS
+.DS_Store
+
+# Python
+__pycache__/
+*.pyc
+
+# Cluster job logs, if ever copied down
+*.out
+*.err
+logs/
+
+# Tool config (this assistant's local settings — not part of the research project)
+.claude/

@@ -1,0 +1,26 @@
+organism: "Neisseria gonorrhoeae"
+phenotype: azithromycin_resistance
+n_genomes: 1029
+
+paths:
+  raw_data: data/raw/gonorrhoeae
+  results: results/gonorrhoeae
+
+phylogeny:
+  tool: fasttree
+
+gwas:
+  tool: pyseer
+  conditional_on: 23S_rRNA
+
+loci_of_interest:
+  - 23S_rRNA
+  - mtrC
+  - mtrD
+  - mtrE
+  - mtrR
+  - rplC
+  - pilC
+  - Zot_domain_protein
+  - mafB
+  - phosphoglycerate_mutase
