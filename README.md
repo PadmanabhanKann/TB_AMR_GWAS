@@ -81,9 +81,3 @@ SpydrPick), Python 3 (pandas, BioPython, pysam, pyfaidx, gffutils), and R
 - `jobs/tuberculosis/ld_decay.sh` calls `ld_decay_calc.py`, which is not
   included in this repository.
 
-## Citation
-
-**An Integrated Genome-Wide Association Framework for Resolving Resistance
-Signals in Clonal and Recombining Pathogens**
-Padmanabhan Kannan — Indian Institute of Science Education and Research
-(IISER) Thiruvananthapuram
