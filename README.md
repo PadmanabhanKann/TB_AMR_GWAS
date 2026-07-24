@@ -69,15 +69,4 @@ Core dependencies across the pipeline: Prokka, Panaroo, FastTree / IQ-TREE,
 SpydrPick), Python 3 (pandas, BioPython, pysam, pyfaidx, gffutils), and R
 (ggplot2, ggrepel, treeWAS, ape, data.table).
 
-## Notes
-
-- **Phylogeny methods differ by organism**: FastTree for *N. gonorrhoeae*,
-  IQ-TREE for *M. tuberculosis*. An earlier FastTree attempt on TB is kept
-  for provenance in `jobs/tuberculosis/fasttree.sh`, superseded by IQ-TREE.
-- **`workflow/08_plotting/`** contains two versions of the bubble-plot
-  script (`bubble_plots.r`, `bubble_plots2.r`), representing successive
-  refinements of the gene-labeling logic — kept both rather than discarding
-  either.
-- `jobs/tuberculosis/ld_decay.sh` calls `ld_decay_calc.py`, which is not
-  included in this repository.
 
