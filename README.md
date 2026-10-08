@@ -70,5 +70,5 @@ SpydrPick), Python 3 (pandas, BioPython, pysam, pyfaidx, gffutils), and R
 (ggplot2, ggrepel, treeWAS, ape, data.table).
 
 ## Future Implementation
-an end to end pipeline for pyseer 
+An end to end pipeline for pyseer 
 
